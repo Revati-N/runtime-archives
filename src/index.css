@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-cyber-blue-700;
+  }
+
+  body {
+    @apply bg-cyber-darker text-gray-100 font-mono;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-cyber-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-cyber-purple-300 rounded;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyber-purple-200;
+  }
+}
+
+@layer components {
+  .cyber-border {
+    @apply border border-cyber-cyan-300 relative;
+  }
+
+  .cyber-border::before {
+    content: '';
+    @apply absolute -inset-[1px] bg-gradient-to-r from-cyber-cyan-300 via-cyber-purple-200 to-cyber-pink-300 rounded opacity-20 blur-sm;
+    z-index: -1;
+  }
+
+  .neon-text {
+    text-shadow: 
+      0 0 10px rgba(0, 243, 237, 0.8),
+      0 0 20px rgba(0, 243, 237, 0.6),
+      0 0 30px rgba(155, 48, 255, 0.4);
+  }
+
+  .glow-cyan {
+    box-shadow: 
+      0 0 10px rgba(0, 243, 237, 0.5),
+      0 0 20px rgba(0, 243, 237, 0.3),
+      inset 0 0 10px rgba(0, 243, 237, 0.2);
+  }
+
+  .glow-purple {
+    box-shadow: 
+      0 0 10px rgba(155, 48, 255, 0.5),
+      0 0 20px rgba(155, 48, 255, 0.3),
+      inset 0 0 10px rgba(155, 48, 255, 0.2);
+  }
+
+  .glow-pink {
+    box-shadow: 
+      0 0 10px rgba(255, 20, 147, 0.5),
+      0 0 20px rgba(255, 20, 147, 0.3),
+      inset 0 0 10px rgba(255, 20, 147, 0.2);
+  }
+
+  .scanline {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scanline::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-b from-transparent via-cyber-cyan-300 to-transparent opacity-10;
+    height: 100%;
+    animation: scan 8s linear infinite;
+    pointer-events: none;
+  }
+}
+
+/* Code highlighting styles */
+.prose pre {
+  @apply bg-cyber-blue-900 border border-cyber-cyan-300/30 rounded-lg p-4;
+}
+
+.prose code {
+  @apply text-cyber-cyan-300 bg-cyber-blue-900/50 px-1 rounded;
+}
+
+.prose pre code {
+  @apply bg-transparent px-0;
+}
+
+/* Markdown styles */
+.markdown-content {
+  @apply text-gray-300 leading-relaxed;
+}
+
+.markdown-content h1 {
+  @apply text-3xl font-bold text-cyber-cyan-300 neon-text mb-4 mt-6;
+}
+
+.markdown-content h2 {
+  @apply text-2xl font-bold text-cyber-purple-200 mb-3 mt-5;
+}
+
+.markdown-content h3 {
+  @apply text-xl font-semibold text-cyber-pink-300 mb-2 mt-4;
+}
+
+.markdown-content p {
+  @apply mb-4;
+}
+
+.markdown-content ul, .markdown-content ol {
+  @apply mb-4 ml-6;
+}
+
+.markdown-content li {
+  @apply mb-2;
+}
+
+.markdown-content a {
+  @apply text-cyber-cyan-300 hover:text-cyber-cyan-200 underline;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-cyber-purple-300 pl-4 italic my-4 text-gray-400;
+}
+
+.markdown-content table {
+  @apply w-full border-collapse my-4;
+}
+
+.markdown-content th, .markdown-content td {
+  @apply border border-cyber-blue-700 px-4 py-2;
+}
+
+.markdown-content th {
+  @apply bg-cyber-blue-900 text-cyber-cyan-300;
+}
+
+.markdown-content img {
+  @apply rounded-lg my-4;
+}
