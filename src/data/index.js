@@ -1,12 +1,10 @@
 // Import all individual notes
-import mlJourneyNote from './notes/my-ml-journey-begins';
 import detect_forgery from './notes/forgery-detection-inpainting.js';
 import multicancer from './notes/multi-cancer-classification.js';
 import depressionClassification from './notes/depression-classification.js';
 
 // Combine all notes into one array
 export const notes = [
-  mlJourneyNote,
   detect_forgery,
   multicancer,
   depressionClassification,
