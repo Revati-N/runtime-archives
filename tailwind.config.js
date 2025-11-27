@@ -7,46 +7,47 @@ export default {
   theme: {
     extend: {
       colors: {
-        cyber: {
-          dark: '#0A0E27',
-          darker: '#050810',
-          blue: {
-            50: '#5C8BCO',
-            100: '#5179AC',
-            200: '#4682B4',
-            300: '#353B85',
-            400: '#2C2971',
-            500: '#21295F',
-            600: '#1E1B51',
-            700: '#1E1B4D',
-            800: '#151B4D',
-            900: '#0A0F3D'
-          },
-          purple: {
-            50: '#9B30FF',
-            100: '#8A2BE2',
-            200: '#663AA3',
-            300: '#5F2BA4',
-            400: '#512A94',
-            500: '#3D1278'
-          },
-          pink: {
-            50: '#FF85A1',
-            100: '#FF7BA9',
-            200: '#FF4F9A',
-            300: '#FF1493',
-            400: '#FF007F',
-            500: '#FF69B4'
-          },
-          cyan: {
-            50: '#39D4B7',
-            100: '#2DC3C1',
-            200: '#00B2A9',
-            300: '#00CED1',
-            400: '#40E0D0',
-            500: '#00F3ED'
-          }
-        }
+  cyber: {
+    dark: '#1a1e3f',      // ← Lighter background
+    darker: '#0f1320',    // ← Less harsh dark
+    blue: {
+      50: '#7CA8E0',
+      100: '#6B97CF',
+      200: '#5A86BE',
+      300: '#4A76AD',
+      400: '#3A669C',
+      500: '#2A567B',
+      600: '#24486A',
+      700: '#1E3A59',
+      800: '#182C48',
+      900: '#121E37'
+    },
+    purple: {
+      50: '#B850FF',      // ← Brighter!
+      100: '#A745F5',
+      200: '#8B4FDB',     // ← Brighter purple
+      300: '#7B3FC4',     // ← More vibrant
+      400: '#6A35AD',
+      500: '#5A2B96'
+    },
+    pink: {
+      50: '#FFA5C1',
+      100: '#FF8FB5',
+      200: '#FF6FB5',     // ← Lighter pink
+      300: '#FF3DA8',     // ← Softer pink
+      400: '#FF1D93',
+      500: '#FF007F'
+    },
+    cyan: {
+      50: '#60FFFC',      // ← Super bright!
+      100: '#40F8F5',
+      200: '#20F0F3',
+      300: '#00E5E8',     // ← Brighter cyan
+      400: '#00D8DB',
+      500: '#00C8CB'      // ← More glow
+    }
+  }
+
       },
       fontFamily: {
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],

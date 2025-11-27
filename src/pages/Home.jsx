@@ -101,28 +101,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* System Info */}
-          <div className="bg-cyber-dark border border-cyber-purple-300/50 rounded-lg p-6">
-            <h3 className="text-cyber-purple-300 font-bold mb-4 text-lg">System Status</h3>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-gray-500">Status:</span>
-                <span className="text-cyber-cyan-300 animate-pulse">● ONLINE</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-500">Version:</span>
-                <span className="text-gray-400">1.0.0</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-500">Last Updated:</span>
-                <span className="text-gray-400">{new Date().toLocaleDateString()}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-500">Runtime:</span>
-                <span className="text-cyber-cyan-300">ACTIVE</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
