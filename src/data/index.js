@@ -1,13 +1,15 @@
 // Import all individual notes
-import welcomeNote from './notes/welcome-to-runtime-archives.js';
-import mlJourneyNote from './notes/my-ml-journey-begins.js';
-// Add more imports here as you create more notes
+import mlJourneyNote from './notes/my-ml-journey-begins';
+import detect_forgery from './notes/forgery-detection-inpainting.js';
+import multicancer from './notes/multi-cancer-classification.js';
+import depressionClassification from './notes/depression-classification.js';
 
 // Combine all notes into one array
 export const notes = [
-  welcomeNote,
   mlJourneyNote,
-  // Add more notes here
+  detect_forgery,
+  multicancer,
+  depressionClassification,
 ];
 
 // Helper functions
