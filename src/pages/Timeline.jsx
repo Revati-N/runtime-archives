@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Calendar, ArrowRight } from 'lucide-react';
 import CyberCard from '../components/UI/CyberCard';
-import { notes } from '../data/notes';
+import { notes } from '../data/index';
 
 const Timeline = () => {
   // Sort notes by date (newest first)

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SearchBar from '../components/UI/SearchBar';
 import NoteList from '../components/Notes/NoteList';
-import { notes, getAllCategories } from '../data/notes';
+import { notes, getAllCategories } from '../data/index';
 import { searchNotes } from '../utils/search';
 
 const NotesLibrary = () => {

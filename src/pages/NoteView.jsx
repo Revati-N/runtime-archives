@@ -3,7 +3,7 @@ import { Calendar, Tag, ArrowLeft, FolderOpen } from 'lucide-react';
 import MarkdownRenderer from '../components/Notes/MarkdownRenderer';
 import CyberCard from '../components/UI/CyberCard';
 import CyberButton from '../components/UI/CyberButton';
-import { getNoteBySlug } from '../data/notes';
+import { getNoteBySlug } from '../data/index';
 
 const NoteView = () => {
   const { slug } = useParams();

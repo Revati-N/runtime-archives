@@ -3,7 +3,7 @@ import { useSearchParams, Link } from 'react-router-dom';
 import { Tag } from 'lucide-react';
 import CyberCard from '../components/UI/CyberCard';
 import NoteList from '../components/Notes/NoteList';
-import { getAllTags, getNotesByTag, notes } from '../data/notes';
+import { getAllTags, getNotesByTag, notes } from '../data/index';
 
 const TagsView = () => {
   const [searchParams, setSearchParams] = useSearchParams();

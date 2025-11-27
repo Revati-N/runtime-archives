@@ -4,7 +4,7 @@ import GlitchText from '../components/UI/GlitchText';
 import StatsWidget from '../components/Dashboard/StatsWidget';
 import RecentActivity from '../components/Dashboard/RecentActivity';
 import CyberButton from '../components/UI/CyberButton';
-import { notes, getAllTags, getAllCategories } from '../data/notes';
+import { notes, getAllTags, getAllCategories } from '../data/index';
 
 const Home = () => {
   const recentNotes = [...notes]
