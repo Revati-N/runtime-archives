@@ -16,6 +16,14 @@ export default function NoteView() {
     })
   }, [folder, slug])
 
+  // Safely format the date
+  const formatDate = (date) => {
+    if (!date) return 'Recent'
+    if (typeof date === 'string') return date
+    if (date instanceof Date) return date.toISOString().split('T')[0]
+    return String(date)
+  }
+
   if (loading) {
     return (
       <div className="text-center py-12">
@@ -46,7 +54,7 @@ export default function NoteView() {
         <div className="flex flex-wrap gap-3 items-center text-sm text-leather">
           <span className="folder-badge">{note.category}</span>
           <span>•</span>
-          <span>{note.date}</span>
+          <span>{formatDate(note.date)}</span>
           {note.tags && note.tags.length > 0 && (
             <>
               <span>•</span>

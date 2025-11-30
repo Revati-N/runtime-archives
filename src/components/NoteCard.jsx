@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom'
 
 export default function NoteCard({ note }) {
+  // Safely format the date
+  const formatDate = (date) => {
+    if (!date) return 'Recent'
+    if (typeof date === 'string') return date
+    if (date instanceof Date) return date.toISOString().split('T')[0]
+    return String(date)
+  }
+
   return (
     <Link 
       to={`/notes/${note.folder}/${note.slug}`}
@@ -19,7 +27,7 @@ export default function NoteCard({ note }) {
       </div>
       <div className="flex justify-between items-center text-sm text-leather/70">
         <span className="folder-badge">{note.category || note.folder}</span>
-        <span>{note.date}</span>
+        <span>{formatDate(note.date)}</span>
       </div>
     </Link>
   )

@@ -16,7 +16,7 @@ export default function Comments() {
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="top"
-        theme="light"
+        theme="gruvbox_light"
         lang="en"
         loading="lazy"
         crossorigin="anonymous"

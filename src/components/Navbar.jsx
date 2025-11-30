@@ -11,17 +11,17 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-deep-brown text-parchment shadow-lg sticky top-0 z-50 border-b-4 border-bronze">
+    <nav className="bg-deep-brown text-parchment shadow-lg sticky top-0 z-50 border-b-4 border-bronze lg:hidden">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-display font-bold text-royal-gold hover:text-parchment transition-colors">
           ⚜ Runtime Archives
         </Link>
-        <div className="flex gap-6">
+        <div className="flex gap-4">
           {navLinks.map(link => (
             <Link
               key={link.path}
               to={link.path}
-              className={`font-semibold tracking-wide transition-colors ${
+              className={`font-semibold tracking-wide transition-colors text-sm ${
                 location.pathname === link.path
                   ? 'text-royal-gold border-b-2 border-royal-gold'
                   : 'text-parchment hover:text-royal-gold'
