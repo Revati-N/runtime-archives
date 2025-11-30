@@ -6,12 +6,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        'parchment': '#FFF8E7',
-        'sepia': '#F4ECD8',
-        'bronze': '#8B6914',
-        'royal-gold': '#D4AF37',
-        'deep-brown': '#3E2723',
-        'leather': '#8D6E63',
+        'parchment': '#FAF9F6',      //main background
+        'sepia': '#E8E4D9',          //sidebar background
+        'bronze': '#1B3A52',         //headers and title
+        'royal-gold': '#3E6990',     //logo text
+        'deep-brown': '#0D1B2A',     // main text colour
+        'leather': '#8B8C7A',        //meta, subtitles
       },
       fontFamily: {
         'serif': ['Crimson Text', 'Georgia', 'serif'],
