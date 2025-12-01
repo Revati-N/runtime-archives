@@ -19,10 +19,10 @@ export default function Sidebar() {
   }, [])
 
   const navLinks = [
-    { path: '/', label: '🏛️ Home', icon: '🏛️' },
-    { path: '/notes', label: '📚 Library', icon: '📚' },
-    { path: '/tags', label: '🏷️ Tags', icon: '🏷️' },
-    { path: '/about', label: '📜 About', icon: '📜' },
+    { path: '/', label: 'Home', icon: '🏛️' },
+    { path: '/notes', label: 'Library', icon: '📚' },
+    { path: '/tags', label: 'Tags', icon: '🏷️' },
+    { path: '/about', label: 'About', icon: '📜' },
   ]
 
   return (
