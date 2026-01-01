@@ -44,6 +44,7 @@ export async function loadAllNotes() {
     { folder: 'curiosity', slug: 'yawns'},
     { folder: 'personal', slug: 'my-journey' },
     { folder: 'tech', slug: 'roadblocks'},
+    { folder: 'paper-formats', slug: 'research'}
   ]
   
   for (const { folder, slug } of notesList) {
