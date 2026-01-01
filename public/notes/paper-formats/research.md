@@ -17,7 +17,6 @@ A concise summary of the research problem, methodology, key results, and conclus
 - Keyword 3  
 - Keyword 4  
 
----
 
 ## 1. Introduction
 
@@ -36,8 +35,6 @@ The study is guided by the following primary research questions:
 ### 1.4 Organization of the Paper
 Outlines the structure of the paper and briefly describes each section.
 
----
-
 ## 2. Related Work
 
 ### 2.1 Summary of Existing Work
@@ -49,7 +46,6 @@ Compares different methodologies and techniques used in existing studies.
 ### 2.3 Identified Technical Gaps
 Highlights limitations and open challenges in current research.
 
----
 
 ## 3. Materials and Methods
 
@@ -64,7 +60,6 @@ Explains data cleaning, normalization, tokenization, and other preprocessing ste
 #### 3.1.3 Data Augmentation
 Details any augmentation techniques applied to enhance dataset diversity.
 
----
 
 ### 3.2 Methods (Foundational Techniques)
 
@@ -85,7 +80,6 @@ Each technique used in the study is discussed in a separate subsection.
 - **Mathematical Formulation**
 - **Role within the Architecture**
 
----
 
 ## 4. Proposed Methodology
 
@@ -98,7 +92,6 @@ Presents the mathematical representation of the proposed method.
 ### 4.3 Algorithm in Detail
 Provides step-by-step explanation or pseudocode of the algorithm.
 
----
 
 ### 4.4 System Architecture
 
@@ -108,7 +101,6 @@ Describes the overall system design and components.
 #### Workflow / Working Mechanism
 Explains how data flows through the system from input to output.
 
----
 
 ## 5. Experimentation, Results, and Analysis
 
@@ -120,7 +112,6 @@ Details the computational resources and tools used.
 #### Dataset Splitting Strategy
 Explains training, validation, and testing splits.
 
----
 
 ### 5.2 Performance Metrics
 - Accuracy  
@@ -128,15 +119,14 @@ Explains training, validation, and testing splits.
 - Recall  
 - F1-Score  
 - ROC-AUC  
+and more on...
 
----
 
 ### 5.3 Results and Analysis
 - Tables and Graphs (Accuracy, ROC Curves, Confusion Matrix, etc.)
 - Comparative Performance with Baseline Models
 - Detailed Interpretation of Results
 
----
 
 ## 6. Conclusion and Future Scope
 
@@ -152,7 +142,6 @@ Discusses real-world applicability of the proposed approach.
 ### Future Research Directions
 Outlines potential improvements and extensions of the work.
 
----
 
 ## 📜 Consent and Compliance Statements
 
@@ -171,7 +160,6 @@ Outlines potential improvements and extensions of the work.
 - **Conflicts of Interest:**  
   The authors declare no conflicts of interest regarding the present study.
 
----
 ## References
 
 Keep in the format asked according to the journal.
