@@ -1,12 +1,15 @@
 ---
-title: Research Paper Format
-excerpt: What is a good research format?
+title: Research Paper Structure
+excerpt: What is a good research paper format?
 tags: [research, paper, format]
 category: Research
 date: 2026-01-01
 ---
 
 # 📄 Research Paper Structure
+
+## Title
+Also including author names and the organizations.
 
 ## Abstract
 A concise summary of the research problem, methodology, key results, and conclusions.
