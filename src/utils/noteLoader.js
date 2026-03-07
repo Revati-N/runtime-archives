@@ -35,7 +35,6 @@ function parseFrontmatter(content) {
   return { data, content: body }
 }
 
-// Rest of the code stays the same...
 export async function loadAllNotes() {
   const allNotes = []
   
