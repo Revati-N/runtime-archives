@@ -45,7 +45,8 @@ export async function loadAllNotes() {
     { folder: 'tech', slug: 'roadblocks'},
     { folder: 'paper-formats', slug: 'research'},
     { folder: 'paper-formats', slug: 'survey'},
-    { folder: 'paper-formats', slug: 'review'}
+    { folder: 'paper-formats', slug: 'review'},
+    { folder: 'curiosity', slug: 'pdf-and-word'}
   ]
   
   for (const { folder, slug } of notesList) {
